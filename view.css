@@ -1,0 +1,1076 @@
+body{
+    margin: 0px;
+    background-color: rgb(255, 247, 236);
+    text-align: center;
+ }
+ 
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border-bottom: 1px solid black;*/
+ }
+ 
+ nav a{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+ }
+ nav a:hover{
+    color: orange;
+ }
+
+ /* meniu drop down */
+#focus{
+   position: absolute;
+   top: 40;
+   right: 4%;
+   /* background-color: red; */
+   height: 200px;
+   width: 200px;
+}
+ul{
+   list-style: none;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 0% 0% 4% 4%;
+   height: 330px;
+   width: 170px;
+}
+ul li{
+   position: absolute;
+   text-align: left;
+}
+#a1{
+   margin-top: 15%;
+}
+#a2{
+   margin-top: 45%;
+}
+#a3{
+   margin-top: 65%;
+}
+#a4{
+   margin-top: 88%;
+}
+#a5{
+   margin-top: 130%;
+}
+li a:hover{
+   color: rgb(238, 216, 174);
+}
+
+/* #txhotel{
+   padding-top: 18px;
+   color: white;
+   text-decoration: NONE;
+   text-align: left;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: light;
+} */
+
+ul li a{
+   display: inline-block;  
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.dropdown li{
+   display: flex;
+}
+ul.dropdown{
+   width: 10%;
+   position: absolute;
+   z-index: 999;
+   display: none;
+}
+#menuacc:hover ul.dropdown{
+   display: block;
+}
+#menuacc:focus ul.dropdown{
+   display: block;
+}
+.dropdown:focus{
+   display: block;
+}
+#focus:focus ul.dropdown{
+   display: block;
+}
+
+ /* first img */
+ .container>img {
+   max-width: 100%;
+   height: auto;
+   padding-top: 0%;
+   margin-bottom: 0%;
+}
+
+.container{
+   position: relative;
+   display: inline-block;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+
+.container>h1{
+  position: absolute;
+  top: 21%;
+  left: 9%;
+  right: 30%;
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container>h4{
+   position: absolute;
+   top: 55%;
+   left: 8%;
+   font-size: 18px;
+   background-color: rgba(0, 0, 0, 0.4);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+   padding: 15px;
+   border: 1px solid black;
+ }
+ .container>h4>a:hover{
+   color: rgb(0, 124, 58);
+ }
+ .container>h4>a{
+   color: white;
+   text-decoration: none;
+}
+
+#attractions > img, #icons{
+    margin-top: 3%;
+    width: 70%;
+}
+
+#attractions > p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 53px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 12px;
+    row-gap: 40px;
+    padding-left: 5%;
+    padding-top: 5%;
+    background-color: #c7d2b8ed;
+    outline: 1px solid black;
+    outline-offset: -30px;
+}
+.grid img{
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    border-radius: 2%;
+ }
+
+.grid > div {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 35px;
+}
+
+.img-container1 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container1>img{
+   width: 100%;
+}
+ .img-container1:hover .overlay1 {
+   opacity: 1;
+ }
+ 
+ .overlay1 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 72%;
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: white;
+   opacity: 0; 
+   transition: opacity 0.3s ease; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text1 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container2 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container2>img{
+   width: 100%;
+}
+ .img-container2:hover .overlay2 {
+   opacity: 1;
+ }
+ 
+ .overlay2 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 75%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text2 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container3 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container3>img{
+   width: 100%;
+}
+ .img-container3:hover .overlay3 {
+   opacity: 1;
+ }
+ 
+ .overlay3 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 97%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text3 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+
+ .img-container4 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container4>img{
+   width: 100%;
+}
+ .img-container4:hover .overlay4 {
+   opacity: 1;
+ }
+ 
+ .overlay4 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 97%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text4 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container5 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container5>img{
+   width: 100%;
+}
+ .img-container5:hover .overlay5 {
+   opacity: 1;
+ }
+ 
+ .overlay5 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 97.5%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text5 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container7 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container7>img{
+   width: 100%;
+}
+ .img-container7:hover .overlay7 {
+   opacity: 1;
+ }
+ 
+ .overlay7 {
+   position: absolute;
+   border-radius: 2%;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 95.5%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text7 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container6 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container6>img{
+   width: 100%;
+}
+ .img-container6:hover .overlay6 {
+   opacity: 1;
+ }
+ 
+ .overlay6 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 78%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text6 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container8 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container8>img{
+   width: 100%;
+}
+ .img-container8:hover .overlay8 {
+   opacity: 1;
+ }
+ 
+ .overlay8 {
+  border-radius: 2%; 
+  position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 67.5%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text8 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container9 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container9>img{
+   width: 100%;
+}
+ .img-container9:hover .overlay9 {
+   opacity: 1;
+ }
+ 
+ .overlay9 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 78%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text9 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container10 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container10>img{
+   width: 100%;
+}
+ .img-container10:hover .overlay10 {
+   opacity: 1;
+ }
+ 
+ .overlay10 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 68%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text10 {
+   text-align: center;
+   font-size: 20px;
+ }
+ 
+.img-container11 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container11>img{
+   width: 100%;
+}
+ .img-container11:hover .overlay11 {
+   opacity: 1;
+ }
+ 
+ .overlay11 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 97%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text11 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container12 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container12>img{
+   width: 100%;
+}
+ .img-container12:hover .overlay12 {
+   opacity: 1;
+ }
+ 
+ .overlay12 {
+   position: absolute;
+   border-radius: 2%;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 69.5%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text12 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container13 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container13>img{
+   width: 100%;
+}
+ .img-container13:hover .overlay13 {
+   opacity: 1;
+ }
+ 
+ .overlay13 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 93%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text13 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container14 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container14>img{
+   width: 100%;
+}
+ .img-container14:hover .overlay14 {
+   opacity: 1;
+ }
+ 
+ .overlay14 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 63.5%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text14 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ 
+.img-container15 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container15>img{
+   width: 100%;
+}
+ .img-container15:hover .overlay15 {
+   opacity: 1;
+ }
+ 
+ .overlay15 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 97%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text15 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+
+ .img-container16 {
+   position: relative;
+   display: inline-block;
+ }
+
+.img-container16>img{
+   width: 100%;
+}
+ .img-container16:hover .overlay16 {
+   opacity: 1;
+ }
+ 
+ .overlay16 {
+  border-radius: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 88%;
+   background-color: rgba(0, 0, 0, 0.5); /* Culoarea de suprapunere */
+   color: white; /* Culoarea textului */
+   opacity: 0; /* Inițial, suprapunerea este invizibilă */
+   transition: opacity 0.3s ease; /* Efect de tranziție pentru opacitate */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .overlay-text16 {
+   text-align: center;
+   font-size: 20px;
+ }
+
+/* last din bcn.html */
+#last{
+   margin-top: 4%;
+   display: flex;
+   justify-content: space-between;
+   padding: 4%;
+   background-color: #c2d4a8ed;
+   text-align: left;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 25px;
+}
+
+#last > img{
+   width: 20%;
+   height: auto;
+}
+
+#last > #txt{
+   margin-top: 4.5%;
+   font-size: 40px;
+}
+
+#txlast{
+   border-left: 1.5px solid black;
+   padding-left: 8%;
+   padding-top: 4.5%;
+}
+
+#txlast > img{
+   width: 30%;
+}
+
+#txlast > a{
+   font-size: 15px;
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+}
+#txlast > a:hover{
+  color: white;
+}
+
+footer{
+   margin-top: 8px;
+   margin-bottom: 8px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+}
+
+@media (max-width: 34em) {
+  nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .container h1{
+     font-size: 22px;
+     top: 8%;
+  }
+  .container h4{
+     font-size: 13px;
+     top: 59%;
+     left: 8%;
+  }
+  #txgeneral{
+     font-size: 22px;
+  }
+  #general{
+     flex-direction: column; 
+     padding-bottom: 0;
+     height: 550px;
+  }
+  #text p{
+     font-size: 15px;
+     margin-bottom: 6%;
+     margin-top: 0;
+  }
+  #last{
+     margin-top: 0px;
+     
+  }
+  #last img{
+     display: none;
+  }
+  #last #txt{
+     font-size: 20px;
+     padding-right: 20px;
+  }
+  #tx a{
+     font-size: 14px;}
+  #attractions p{
+      font-size: 20px;
+    }
+    #cathedrals{
+      font-size: 13px;
+    }
+    #parks{
+      font-size: 13px;
+    }
+  #points
+  {font-size: 13px;}
+  #others{
+    font-size: 13px;
+  }
+
+  
+  #focus{
+   position: absolute;
+   top: 40;
+   right: 35%;
+   /* background-color: red; */
+   height: 20px;
+   width: 130px;
+   z-index: 999;
+}
+ul{
+   list-style: none;
+   background-color: rgba(0, 0, 0, 0.9);
+   border-radius: 0% 0% 4% 4%;
+   height: 310px;
+   width: 400px;
+}
+ul li{
+   position: absolute;
+   text-align: left;
+}
+#a1{
+   margin-top: 15%;
+}
+#a2{
+   margin-top: 45%;
+}
+#a3{
+   margin-top: 65%;
+}
+#a4{
+   margin-top: 86%;
+}
+#a5{
+   margin-top: 130%;
+}
+li a:hover{
+   color: rgb(238, 216, 174);
+}
+
+ul li a{
+   display: inline-block;  
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.dropdown li{
+   display: flex;
+}
+ul.dropdown{
+   width: 28%;
+   position: absolute;
+   z-index: 999;
+   display: none;
+}
+#menuacc:hover ul.dropdown{
+   display: block;
+}
+#menuacc:focus ul.dropdown{
+   display: block;
+}
+.dropdown:focus{
+   display: block;
+}
+#focus:focus ul.dropdown{
+   display: block;
+}
+
+  
+}
+@media (max-width: 55em) and (min-width: 41em) {
+  nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .container h1{
+     font-size: 35px;
+     top: 8%;
+  }
+  .container h4{
+     font-size: 13px;
+     top: 60%;
+     left: 9%;
+  }
+  
+  h4{
+     display: none;
+     /* top: 365%;
+     font-size: 13px;
+     padding: 1%; */
+  }
+
+  #clip{
+     height: 560px;
+  }
+  #clip h1{
+     font-size: 22px;
+  }
+  #clip iframe{
+     width: 100%;
+     height: 360px;
+  }
+
+  #final img{
+     height: 80px;
+  }
+
+  #last{
+     margin-top: 0px;
+     
+  }
+  #last img{
+     display: none;
+  }
+  #last #txt{
+     font-size: 20px;
+     padding-right: 20px;
+  }
+  #tx a{
+     font-size: 14px;
+  }
+
+  #focus{
+   position: absolute;
+   top: 40;
+   right: 38%;
+   /* background-color: red; */
+   height: 20px;
+   width: 150px;
+   z-index: 999;
+}
+ul{
+   list-style: none;
+   background-color: rgba(0, 0, 0, 0.9);
+   border-radius: 0% 0% 4% 4%;
+   height: 370px;
+   width: 400px;
+}
+ul li{
+   position: absolute;
+   text-align: left;
+}
+#a1{
+   margin-top: 15%;
+}
+#a2{
+   margin-top: 45%;
+}
+#a3{
+   margin-top: 65%;
+}
+#a4{
+   margin-top: 86%;
+}
+#a5{
+   margin-top: 130%;
+}
+li a:hover{
+   color: rgb(238, 216, 174);
+}
+
+ul li a{
+   display: inline-block;  
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.dropdown li{
+   display: flex;
+}
+ul.dropdown{
+   width: 28%;
+   position: absolute;
+   z-index: 999;
+   display: none;
+}
+#menuacc:hover ul.dropdown{
+   display: block;
+}
+#menuacc:focus ul.dropdown{
+   display: block;
+}
+.dropdown:focus{
+   display: block;
+}
+#focus:focus ul.dropdown{
+   display: block;
+}
+
+  
+}
+
+@media (max-width: 41em) and (min-width: 34em) {
+  nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .container h1{
+     font-size: 29px;
+     top: 8%;
+  }
+  .container h4{
+     font-size: 13px;
+     top: 60%;
+     left: 9%;
+  }
+  h4{
+     display: none;
+     /* top: 365%;
+     font-size: 13px;
+     padding: 1%; */
+  }
+
+  #clip{
+     height: 560px;
+  }
+  #clip h1{
+     font-size: 22px;
+  }
+  #clip iframe{
+     width: 100%;
+     height: 360px;
+  }
+
+  #final img{
+     height: 80px;
+  }
+
+  #last{
+     margin-top: 0px;
+     
+  }
+  #last img{
+     display: none;
+  }
+  #last #txt{
+     font-size: 20px;
+     padding-right: 20px;
+  }
+  #tx a{
+     font-size: 14px;
+  }
+
+  
+}

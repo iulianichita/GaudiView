@@ -1,0 +1,590 @@
+body{
+    margin: 0px;
+    background-color: rgb(255, 247, 236);
+    text-align: center;
+ }
+ 
+ nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border-bottom: 1px solid black;*/
+ }
+ 
+ nav a{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+ }
+ nav a:hover{
+    color: orange;
+ }
+
+ /* meniu drop down */
+#focus{
+   position: absolute;
+   top: 40;
+   right: 4%;
+   /* background-color: red; */
+   height: 200px;
+   width: 200px;
+}
+ul{
+   list-style: none;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 0% 0% 4% 4%;
+   height: 330px;
+   width: 170px;
+}
+ul li{
+   position: absolute;
+   text-align: left;
+}
+#a1{
+   margin-top: 15%;
+}
+#a2{
+   margin-top: 45%;
+}
+#a3{
+   margin-top: 65%;
+}
+#a4{
+   margin-top: 88%;
+}
+#a5{
+   margin-top: 130%;
+}
+li a:hover{
+   color: rgb(238, 216, 174);
+}
+
+/* #txhotel{
+   padding-top: 18px;
+   color: white;
+   text-decoration: NONE;
+   text-align: left;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: light;
+} */
+
+ul li a{
+   display: inline-block;  
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.dropdown li{
+   display: flex;
+}
+ul.dropdown{
+   width: 10%;
+   position: absolute;
+   z-index: 999;
+   display: none;
+}
+#menuacc:hover ul.dropdown{
+   display: block;
+}
+#menuacc:focus ul.dropdown{
+   display: block;
+}
+.dropdown:focus{
+   display: block;
+}
+#focus:focus ul.dropdown{
+   display: block;
+}
+
+ /* first img */
+ .container>img {
+   max-width: 100%;
+   height: auto;
+   padding-top: 0%;
+   margin-bottom: 0%;
+}
+
+.container{
+   position: relative;
+   display: inline-block;
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+}
+
+.container>h1{
+  position: absolute;
+  top: 19%;
+  left: 9%;
+  right: 30%;
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container>h4{
+   position: absolute;
+   top: 51%;
+   left: 9%;
+   font-size: 18px;
+   background-color: rgba(0, 0, 0, 0.4);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: rgb(255, 255, 255);
+   padding: 15px;
+   border: 1px solid black;
+ }
+ .container>h4>a:hover{
+   color: rgb(255, 227, 176);
+ }
+ .container>h4>a{
+   color: white;
+   text-decoration: none;
+}
+
+#restaurants > div{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+   margin-right: 9%;
+}
+
+#restaurants > #word{
+   font-size: 50px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 26px;
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+}
+
+#restaurants > div{
+   margin-left: 9%;
+   padding-left: 6%;
+}
+#restaurants > div > img{
+   width: 24%;
+   margin: 1.5%;
+}
+#tx{
+   padding-right: 60%;
+   padding-top: 3%;
+}
+
+a{
+   text-decoration: none;
+   font-size: 15px;
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover{
+   color: orange;
+   text-decoration: underline;
+}
+
+
+#bars > div{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 12px;
+   margin-right: 9%;
+   padding-right: 8%;
+}
+
+#bars > #word{
+   font-size: 50px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 26px;
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   padding-left: 66%;
+}
+
+#bars > div{
+   margin-left: 9%;
+}
+#bars > div > img{
+   width: 24%;
+   margin: 1.5%;
+}
+#tx1{
+   padding-left: 56%; 
+   padding-top: 3%;
+}
+
+
+#last{
+   margin-top: 4%;
+   display: flex;
+   justify-content: space-between;
+   padding: 4%;
+   background-color: #c2d4a8ed;
+   text-align: left;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 25px;
+}
+
+#last > img{
+   width: 20%;
+   height: auto;
+}
+
+#last > #txt{
+   margin-top: 4.5%;
+   font-size: 40px;
+}
+
+#txlast{
+   border-left: 1.5px solid black;
+   padding-left: 8%;
+   padding-top: 4.5%;
+}
+
+#txlast > img{
+   width: 30%;
+}
+
+#txlast > a{
+   font-size: 15px;
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+}
+#txlast > a:hover{
+  color: white;
+}
+
+footer{
+   margin-top: 8px;
+   margin-bottom: 8px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+}
+
+
+@media (max-width: 35em) and (min-width: 0em){
+   nav {
+     display: flex;
+     flex-direction: column; 
+     align-items: center; 
+   }
+   .container h1{
+      font-size: 22px;
+      top: 8%;
+   }
+   .container h4{
+      font-size: 13px;
+      top: 59%;
+      left: 8%;
+   }
+   #text p{
+      font-size: 15px;
+      margin-bottom: 6%;
+      margin-top: 0;
+   }
+   #last{
+      margin-top: 0px;
+      
+   }
+   #last img{
+      display: none;
+   }
+   #last #txt{
+      font-size: 20px;
+      padding-right: 20px;
+   }
+   #tx a{
+      font-size: 14px;}
+
+   #restaurants > #word{
+      font-size: 35px
+   }
+
+   #restaurants > div > img{
+      width: 40%;
+      height: auto;
+   }
+
+   #tx1{
+      padding-left: 8%; 
+      padding-top: 3%;
+   }
+   #bars #word{
+      font-size: 35px;
+   }
+
+   #bars > div > img{
+      width: 40%;
+      height: auto;
+   }
+   
+   #focus{
+      position: absolute;
+      top: 40;
+      right: 35%;
+      /* background-color: red; */
+      height: 20px;
+      width: 130px;
+      z-index: 999;
+   }
+   ul{
+      list-style: none;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 0% 0% 4% 4%;
+      height: 310px;
+      width: 400px;
+   }
+   ul li{
+      position: absolute;
+      text-align: left;
+   }
+   #a1{
+      margin-top: 15%;
+   }
+   #a2{
+      margin-top: 45%;
+   }
+   #a3{
+      margin-top: 65%;
+   }
+   #a4{
+      margin-top: 86%;
+   }
+   #a5{
+      margin-top: 130%;
+   }
+   li a:hover{
+      color: rgb(238, 216, 174);
+   }
+   
+   ul li a{
+      display: inline-block;  
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   ul.dropdown li{
+      display: flex;
+   }
+   ul.dropdown{
+      width: 28%;
+      position: absolute;
+      z-index: 999;
+      display: none;
+   }
+   #menuacc:hover ul.dropdown{
+      display: block;
+   }
+   #menuacc:focus ul.dropdown{
+      display: block;
+   }
+   .dropdown:focus{
+      display: block;
+   }
+   #focus:focus ul.dropdown{
+      display: block;
+   }
+   
+   
+ }
+ @media (max-width: 55em) and (min-width: 41em) {
+   nav {
+     display: flex;
+     flex-direction: column; 
+     align-items: center; 
+   }
+   .container h1{
+      font-size: 35px;
+      top: 8%;
+   }
+   .container h4{
+      font-size: 13px;
+      top: 60%;
+      left: 9%;
+   }
+ 
+   #final img{
+      height: 80px;
+   }
+ 
+   #last{
+      margin-top: 0px;
+      
+   }
+   #last img{
+      display: none;
+   }
+   #last #txt{
+      font-size: 20px;
+      padding-right: 20px;
+   }
+   #tx a{
+      font-size: 14px;
+   }
+
+   #restaurants > #word{
+      font-size: 35px
+   }
+
+   #restaurants > div > img{
+      width: 40%;
+      height: auto;
+   }
+
+   #tx1{
+      padding-left: 8%; 
+      padding-top: 3%;
+   }
+   #bars #word{
+      font-size: 35px;
+   }
+
+   #bars > div > img{
+      width: 40%;
+      height: auto;
+   }
+
+   H4{
+      display: none;
+   }
+
+   #focus{
+      position: absolute;
+      top: 40;
+      right: 38%;
+      /* background-color: red; */
+      height: 20px;
+      width: 150px;
+      z-index: 999;
+   }
+   ul{
+      list-style: none;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 0% 0% 4% 4%;
+      height: 370px;
+      width: 400px;
+   }
+   ul li{
+      position: absolute;
+      text-align: left;
+   }
+   #a1{
+      margin-top: 15%;
+   }
+   #a2{
+      margin-top: 45%;
+   }
+   #a3{
+      margin-top: 65%;
+   }
+   #a4{
+      margin-top: 86%;
+   }
+   #a5{
+      margin-top: 130%;
+   }
+   li a:hover{
+      color: rgb(238, 216, 174);
+   }
+   
+   ul li a{
+      display: inline-block;  
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   ul.dropdown li{
+      display: flex;
+   }
+   ul.dropdown{
+      width: 28%;
+      position: absolute;
+      z-index: 999;
+      display: none;
+   }
+   #menuacc:hover ul.dropdown{
+      display: block;
+   }
+   #menuacc:focus ul.dropdown{
+      display: block;
+   }
+   .dropdown:focus{
+      display: block;
+   }
+   #focus:focus ul.dropdown{
+      display: block;
+   }
+   
+   
+ }
+ 
+ @media (max-width: 41em) and (min-width: 35em) {
+   nav {
+     display: flex;
+     flex-direction: column; 
+     align-items: center; 
+   }
+   .container h1{
+      font-size: 29px;
+      top: 8%;
+   }
+   .container h4{
+      font-size: 13px;
+      top: 60%;
+      left: 9%;
+   }
+ 
+   #final img{
+      height: 80px;
+   }
+ 
+   #last{
+      margin-top: 0px;
+      
+   }
+   #last img{
+      display: none;
+   }
+   #last #txt{
+      font-size: 20px;
+      padding-right: 20px;
+   }
+   #tx a{
+      font-size: 14px;
+   }
+   H4{
+      display: none;
+   }
+
+   #restaurants > div > img{
+      width: 20px;
+      height: 120px;
+   }
+
+   #restaurants > #word{
+      font-size: 45px
+   }
+
+   #restaurants > div > img{
+      width: 40%;
+      height: auto;
+   }
+
+   #tx1{
+      padding-left: 8%; 
+      padding-top: 3%;
+   }
+   #bars #word{
+      font-size: 45px;
+   }
+
+   #bars > div > img{
+      width: 40%;
+      height: auto;
+   }
+ 
+   
+ }
